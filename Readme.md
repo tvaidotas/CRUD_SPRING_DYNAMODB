@@ -1,3 +1,16 @@
+# Deploying
+
+When deploying to Elastic Beanstalk set the following environment keys under Configuration -> Software:
+```
+KEY                         VALUE
+SERVER_PORT                 5000
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+```
+
+Ensure that the role has permissions for DynamoDB as well. 
+Configuration -> Security
+
 #  Creating the DynamoDB web application item tracker
 
 You can develop a web application that tracks and reports on work items by using the following AWS services:
